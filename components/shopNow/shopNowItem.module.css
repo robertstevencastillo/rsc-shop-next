@@ -1,0 +1,70 @@
+.shopNowItem {
+  /* min-width: 31%; */
+  width: 20em;
+  height: 240px;
+
+  /*This property allows for the shop now items to eat up as much white space as possible. You'll notice at certain viewports a menu item might span the entire viewport. This is good */
+  flex: 1 1 auto;
+
+  /*Using a grid display for the entire shop now item. This will help with allowing the button to display over the background image */
+  display: grid;
+  /* position: relative; */
+
+  margin: 0 5.5px 15px 5px;
+  overflow: hidden;
+  border: solid 1px black;
+}
+
+.shopNowItemBackgroundImage {
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: relative;
+
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+
+  width: 100%;
+  height: 100%;
+
+  /* z-index: 1; */
+  /* position: absolute; */
+}
+
+.shopNowItemBackgroundImage,
+.shopNowItemButtonContainer {
+  /*Don't know how grid area works, but it got the button to display over the background image */
+  grid-area: 1/1;
+}
+
+.shopNowItemButtonContainer {
+  width: 100%;
+
+  /*Centering the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* z-index: 2;  */
+  /* position: absolute; */
+}
+
+.shopNowItemButton {
+  padding: 12px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background: #464646;
+  opacity: 0.8;
+}
+
+.shopNowItemButton:hover {
+  cursor: pointer;
+  background: black;
+}

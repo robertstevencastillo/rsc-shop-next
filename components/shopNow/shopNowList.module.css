@@ -1,0 +1,39 @@
+.shopNowSection h3 {
+  text-align: center;
+}
+
+.shopNowList {
+  width: 100%;
+
+  /*Display each shop now item in a row format */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shopNowViewAllButtonContainer {
+  width: 100%;
+
+  /*Centering the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* z-index: 2;  */
+  /* position: absolute; */
+}
+
+.shopNowViewAllButton {
+  padding: 12px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  background: #464646;
+  opacity: 0.8;
+}
+
+.shopNowViewAllButton:hover {
+  cursor: pointer;
+  background: black;
+}
