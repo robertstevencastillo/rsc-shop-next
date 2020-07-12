@@ -3,7 +3,6 @@ module.exports = {
     tailwindcss: {},
     autoprefixer: {},
   },
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx", "./src/**/*.js"],
   ...(process.env.NODE_ENV === "production"
     ? {
         "@fullhuman/postcss-purgecss": {

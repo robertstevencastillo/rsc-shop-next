@@ -4,15 +4,17 @@ import shopNowData from "./shopNowData.js";
 import styles from "./shopNowList.module.css";
 import Link from "next/link";
 
-export default function ShopNowList() {
+function ShopNowList() {
   return (
     <div className={styles.shopNowSection}>
       <h3>
-        <i>Check Out Our Products</i>
+        <strong>
+          <i>Check Out Our Products</i>
+        </strong>
       </h3>
       <div className={styles.shopNowList}>
         {shopNowData.map(item => {
-          return <ShopNowItem key={item.id} title={item.upperCaseTitle} imageUrl={item.imageUrl} linkUrl={item.linkUrl} />;
+          return <ShopNowItem key={item.id} title={item.title} imageUrl={item.imageUrl} linkUrl={item.linkUrl} upperCaseTitle={item.upperCaseTitle} />;
         })}
       </div>
       <div className={styles.shopNowViewAllButtonContainer}>
@@ -23,3 +25,5 @@ export default function ShopNowList() {
     </div>
   );
 }
+
+export default ShopNowList;

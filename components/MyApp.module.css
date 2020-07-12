@@ -1,0 +1,7 @@
+.myAppContainer {
+  /*parent container is body, in global.css, body uses display:grid, so to center grid items, use margin: auto 
+  https://stackoverflow.com/a/45599428 - Go to the Grid Layout -> auto margins section
+  */
+  margin: 2rem auto auto auto;
+  width: 90vw;
+}
