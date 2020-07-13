@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "../components/Header";
+import React from "react";
 import ShopNowList from "../components/shopNow/shopNowList";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Head>

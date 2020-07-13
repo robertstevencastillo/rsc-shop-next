@@ -295,4 +295,7 @@ const SHOP_DATA = {
   },
 };
 
-export default SHOP_DATA;
+const CLOTHING_CATEGORIES = ["all", "mens", "womens", "hats", "pants", "jackets", "shoes"];
+const ALL_CLOTHING_ITEMS = [...SHOP_DATA.hats.items, ...SHOP_DATA.shoes.items, ...SHOP_DATA.jackets.items, ...SHOP_DATA.mens.items, ...SHOP_DATA.womens.items, ...SHOP_DATA.pants.items];
+
+export { SHOP_DATA, CLOTHING_CATEGORIES, ALL_CLOTHING_ITEMS };

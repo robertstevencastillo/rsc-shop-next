@@ -12,7 +12,6 @@ function ShopPageListFilter(props) {
   function handleCategoryChange(event) {
     appDispatch({ type: `${event.target.value.toUpperCase()}` });
     router.push(`/shop/[category]`, `/shop/${event.target.value}`, { shallow: true });
-    console.log(router);
   }
 
   return (

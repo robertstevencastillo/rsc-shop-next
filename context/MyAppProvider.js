@@ -3,8 +3,7 @@ import { useImmerReducer } from "use-immer";
 import MyAppReducer from "../reducers/MyAppReducer";
 import StateContext from "./StateContext";
 import DispatchContext from "./DispatchContext";
-import SHOP_DATA from "../data/shop-data";
-import MyAppLayout from "../layouts/MyAppLayout";
+import { SHOP_DATA } from "../data/shop-data";
 
 const initialState = {
   hats: SHOP_DATA.hats,

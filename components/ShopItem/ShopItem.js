@@ -10,8 +10,6 @@ function ShopItem(props) {
   const appDispatch = useContext(DispatchContext);
   const item = appState.activeShopPageItems.filter(item => item.id.toString() === router.query.categoryItem).reduce(({}, item) => item);
 
-  console.log(item);
-
   return (
     <div className={styles.shopItemContainer}>
       <div className={styles.shopItemImgContainer}>
