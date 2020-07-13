@@ -8,8 +8,8 @@ export async function getStaticPaths() {
       return obj.items.map(item => {
         return {
           params: {
-            category: `[${obj.routeName}]`,
-            categoryItem: `[${item.id}]`,
+            category: `/shop/${obj.routeName}`,
+            categoryItem: `/shop/${obj.routeName}/${item.id}`,
           },
         };
       });
