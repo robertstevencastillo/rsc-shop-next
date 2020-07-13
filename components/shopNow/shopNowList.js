@@ -18,7 +18,7 @@ function ShopNowList() {
         })}
       </div>
       <div className={styles.shopNowViewAllButtonContainer}>
-        <Link href="/shop/all">
+        <Link href={"/shop/[category]"} as={`/shop/all`}>
           <button className={styles.shopNowViewAllButton}>View All</button>
         </Link>
       </div>

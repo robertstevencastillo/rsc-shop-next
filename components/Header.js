@@ -14,7 +14,7 @@ export default function Header(props) {
             <nav>
               <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                 <li>
-                  <Link href="/shop/all">
+                  <Link href="/shop/[category]" as={`/shop/all`}>
                     <button className="inline-block no-underline hover:text-black hover:underline py-2 px-4">Shop</button>
                   </Link>
                 </li>
