@@ -7,9 +7,9 @@ import styles from "./ShopItem.module.css";
 function ShopItem(props) {
   const router = useRouter();
   console.log(router);
-  const appState = useContext(StateContext);
-  const appDispatch = useContext(DispatchContext);
-  const item = appState.activeShopPageItems.filter(item => item.id.toString() === router.query.categoryItem).reduce(({}, item) => item);
+  //const appState = useContext(StateContext);
+  //const appDispatch = useContext(DispatchContext);
+  //const item = appState.activeShopPageItems.filter(item => item.id.toString() === router.query.categoryItem).reduce(({}, item) => item);
 
   return (
     <div className={styles.shopItemContainer}>
