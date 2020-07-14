@@ -10,7 +10,7 @@ function ShopPageListItem(props) {
   const appState = useContext(StateContext);
 
   return (
-    <Link href={`/shop/[category]/[categoryItem]`} as={`/shop/${appState.activeShopPageList}/${props.id}`}>
+    <Link href={`/shop/[category]/[categoryItem]`} as={`/shop/${appState.activeShopPageList}/${props.id}`} prefetch={false}>
       <div className={styles.shopPageListItemContainer}>
         <div className={styles.shopPageListItemImgContainer}>
           <img className={styles.shopPageListItemImg} src={props.image} />

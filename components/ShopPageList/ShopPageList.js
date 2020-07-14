@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { useRouter } from "next/router";
 import StateContext from "../../context/StateContext";
 import DispatchContext from "../../context/DispatchContext";
@@ -16,14 +16,16 @@ function ShopPageList(props) {
   }, []);
 
   return (
-    <div className={styles.shopPageListContainer}>
-      <ShopPageListFilter />
-      <div className={styles.shopPageListItemsContainer}>
-        {appState.activeShopPageItems.map(item => {
-          return <ShopPageListItem category={item.category} id={item.id} key={item.id} image={item.imageUrl} name={item.name} price={item.price} />;
-        })}
+    <>
+      <div className={styles.shopPageListContainer}>
+        <ShopPageListFilter />
+        <div className={styles.shopPageListItemsContainer}>
+          {appState.activeShopPageItems.map(item => {
+            return <ShopPageListItem category={item.category} id={item.id} key={item.id} image={item.imageUrl} name={item.name} price={item.price} />;
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

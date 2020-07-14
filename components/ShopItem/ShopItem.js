@@ -6,6 +6,7 @@ import styles from "./ShopItem.module.css";
 
 function ShopItem(props) {
   const router = useRouter();
+  console.log(router);
   const appState = useContext(StateContext);
   const appDispatch = useContext(DispatchContext);
   const item = appState.activeShopPageItems.filter(item => item.id.toString() === router.query.categoryItem).reduce(({}, item) => item);
@@ -13,11 +14,13 @@ function ShopItem(props) {
   return (
     <div className={styles.shopItemContainer}>
       <div className={styles.shopItemImgContainer}>
+        {/* 
         <img src={item.imageUrl} />
       </div>
       <div className={styles.shopItemDetailsContainer}>
         <p>{item.name}</p>
         <p>${item.price}</p>
+        */}
         <button>Add To Cart</button>
       </div>
     </div>

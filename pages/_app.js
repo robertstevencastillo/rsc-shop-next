@@ -9,15 +9,13 @@ import stylesIndex from "../styles/index.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <MyAppProvider>
-        <Header />
-        <MyAppLayout>
-          <Component {...pageProps}></Component>
-        </MyAppLayout>
-        <Footer />
-      </MyAppProvider>
-    </>
+    <MyAppProvider>
+      <Header />
+      <MyAppLayout>
+        <Component {...pageProps}></Component>
+      </MyAppLayout>
+      <Footer />
+    </MyAppProvider>
   );
 }
 

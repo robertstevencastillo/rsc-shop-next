@@ -26,7 +26,6 @@ export async function getStaticProps(context) {
 }
 
 function ShopIndex(props) {
-  //console.log(props);
   return (
     <>
       <ShopPageList />

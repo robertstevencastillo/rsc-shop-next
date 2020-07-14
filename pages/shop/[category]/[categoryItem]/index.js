@@ -30,11 +30,13 @@ export async function getStaticProps(context) {
   return {
     props: {
       context,
+      SHOP_DATA,
     }, // will be passed to the page component as props
   };
 }
 
 function ShopItemIndex(props) {
+  //console.log(props);
   return (
     <>
       <ShopItem />
