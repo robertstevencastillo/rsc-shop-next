@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const paths = CLOTHING_CATEGORIES.map(currCategory => {
     return {
       params: {
-        category: `/shop/${currCategory}`,
+        category: `${currCategory}`,
       },
     };
   });

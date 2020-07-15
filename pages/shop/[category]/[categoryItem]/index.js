@@ -8,17 +8,21 @@ export async function getStaticPaths() {
       return obj.items.map(item => {
         return {
           params: {
-            category: `/shop/${obj.routeName}`,
-            categoryItem: `/shop/${obj.routeName}/${item.id}`,
+            //category: `/shop/${obj.routeName}`,
+            //categoryItem: `/shop/${obj.routeName}/${item.id}`,
+            category: `${obj.routeName}`,
+            categoryItem: `${item.id}`,
           },
         };
       });
     }),
   ];
+  //returns an array that contains 6 sub arrays. Each subarray contains objects pertaining to a particular clothing category
 
   const paths = tempPaths.reduce((flat, nestedArray) => {
     return flat.concat(...nestedArray);
   }, []);
+  // return an array consisting of objects, where each object contains information about a clothing category, and the clothing item. This allows our app to see all the possible paths under the 'shop' route
 
   return {
     paths,
@@ -36,7 +40,7 @@ export async function getStaticProps(context) {
 }
 
 function ShopItemIndex(props) {
-  //console.log(props);
+  console.log(props);
   return (
     <>
       <ShopItem />
