@@ -29,5 +29,8 @@ export default function MyAppReducer(draftState, action) {
     case "ALL":
       draftState.activeShopPageItems = [...SHOP_DATA.hats.items, ...SHOP_DATA.shoes.items, ...SHOP_DATA.jackets.items, ...SHOP_DATA.mens.items, ...SHOP_DATA.womens.items, ...SHOP_DATA.pants.items];
       draftState.activeShopPageList = "all";
+    case "ADD_TO_CART":
+      draftState.cart.push(action.value);
+      draftState.numberOfItemsInCart = draftState.numberOfItemsInCart + 1;
   }
 }

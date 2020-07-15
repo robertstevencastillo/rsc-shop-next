@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
+//import { useRouter } from "next/router";
 import styles from "./ShopPageListItem.module.css";
-import { useRouter } from "next/router";
 import StateContext from "../../../context/StateContext";
-
 import Link from "next/link";
 
 function ShopPageListItem(props) {
   //const router = useRouter();
+  //console.log(router);
   const appState = useContext(StateContext);
 
   return (

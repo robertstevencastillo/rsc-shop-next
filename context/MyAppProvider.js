@@ -15,6 +15,8 @@ const initialState = {
   clothingCategories: ["all", "mens", "womens", "hats", "pants", "jackets", "shoes"],
   activeShopPageList: "all",
   activeShopPageItems: [...SHOP_DATA.hats.items, ...SHOP_DATA.shoes.items, ...SHOP_DATA.jackets.items, ...SHOP_DATA.mens.items, ...SHOP_DATA.womens.items, ...SHOP_DATA.pants.items],
+  cart: [],
+  numberOfItemsInCart: 0,
 };
 
 function MyAppProvider(props) {

@@ -40,7 +40,6 @@ export async function getStaticProps(context) {
 }
 
 function ShopItemIndex(props) {
-  console.log(props);
   return (
     <>
       <ShopItem />
