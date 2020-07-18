@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .shopNowSection h3 {
   text-align: center;
+  font-size: 23px;
 }
 
 .shopNowList {
@@ -36,11 +38,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
-  background: #464646;
-  opacity: 0.8;
+  background: gray;
+  /* opacity: 0.8; */
 }
 
 .shopNowViewAllButton:hover {
   cursor: pointer;
-  background: black;
+  background: #2d3748;
+  transition: all 0.2s linear;
 }

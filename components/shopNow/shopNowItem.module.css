@@ -12,7 +12,7 @@
 
   margin: 0 5.5px 15px 5px;
   overflow: hidden;
-  border: solid 1px black;
+  border: solid 1px #2d3748;
 }
 
 .shopNowItemBackgroundImage {
@@ -60,11 +60,15 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
-  background: #464646;
-  opacity: 0.8;
+  /*background: #464646 */
+  background: rgba(255, 255, 255, 0.8);
+  /*opacity: 0.8; */
+  color: #2d3748;
 }
 
 .shopNowItemButton:hover {
   cursor: pointer;
-  background: black;
+  background: #2d3748;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s linear;
 }

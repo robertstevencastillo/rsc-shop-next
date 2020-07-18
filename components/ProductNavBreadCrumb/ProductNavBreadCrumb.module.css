@@ -1,0 +1,23 @@
+.productNavBreadCrumbContainer {
+  background: #f7f8fa;
+  color: #777777;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+}
+
+.productNavBreadCrumbList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productNavBreadCrumbList > p {
+  font-size: 14px;
+}
+
+.productNavBreadCrumbList > p:hover:not(:last-child) {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}

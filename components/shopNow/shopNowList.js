@@ -9,7 +9,7 @@ function ShopNowList() {
     <div className={styles.shopNowSection}>
       <h3>
         <strong>
-          <i>Check Out Our Products</i>
+          <i>Product Categories</i>
         </strong>
       </h3>
       <div className={styles.shopNowList}>
